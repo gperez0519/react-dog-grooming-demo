@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <>
       <div className="text-4xl font-bold p-5 text-center">Our Services</div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 p-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
         <div className="service-one sm:grid-cols-5">
           <div className="break-words bg-indigo-400 font-bold text-white text-center p-2 rounded-t-md">
             Puppers Basic

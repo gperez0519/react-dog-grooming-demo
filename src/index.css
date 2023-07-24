@@ -11,6 +11,32 @@ body {
   /* The image used */
   background-image: url("./images/doggrooming-1280x853.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 100% 24%;
   height: 50vh;
+}
+
+.main-text {
+  opacity: 0.8;
+}
+
+.dog-logo:hover {
+  animation: 1s infinite shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }

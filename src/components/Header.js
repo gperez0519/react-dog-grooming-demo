@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaDog } from "react-icons/fa";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [navMenuToggle, setNavMenuToggle] = useState(false);
@@ -8,10 +8,12 @@ const Header = () => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-red-400 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <FaDog className="mx-3 text-2xl" />
-        <span className="font-semibold text-xl tracking-tight">
-          Woof Dog Grooming
-        </span>
+        <FaDog className="mx-3 text-2xl dog-logo" />
+        <Link to="/">
+          <span className="font-semibold text-xl tracking-tight">
+            Woof Dog Grooming
+          </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button
@@ -42,7 +44,6 @@ const Header = () => {
           >
             Home
           </Link>
-
           <Link
             to="/about"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
@@ -56,7 +57,12 @@ const Header = () => {
           >
             Services
           </Link>
-          
+          <Link
+            to="/testimonials"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+          >
+            Testimonials
+          </Link>
         </div>
       </div>
     </nav>
